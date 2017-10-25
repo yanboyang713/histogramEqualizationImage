@@ -1,0 +1,19 @@
+* Overview
+This is a color image display and enhancement program. The program enhances an image using histogram equalization and displays the enhanced image in a window. The program also provides functions to navigate through the image if the image is larger than the viewing window and to zoom in and out. For the enhancement, the program apply histogram equalization to RGB channels separately.
+
+* Feature
+1. The program be named as “histEqImage” and shall take a BMP image as the input image. There are Makefile in the folder when you want to compile and link your program. Please run $ make
+
+2. The enhanced image can be displayed in a window and users are able to navigate through it. The window size is fixed at 640 x 480 (width x height) pixels.
+
+3. The program can take command line options to specify
+   + a. the input BMP image file
+   + b. the usage of the program if the option is -help.
+
+4. The keys for zooming and navigation should be
+   + Arrow keys: navigate through the image up/down/left/right in the viewing window with step size of 5 pixels.
+   + +: zoom-in by a factor of 2
+   + -: zoom-out by a factor of 2
+   + Key ‘q’ or ‘Q’: the program exists
+
+5. Bilinear interpolation be used to implement the zoom in and out functions.

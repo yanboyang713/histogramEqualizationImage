@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS= -g -c -Wall `sdl-config --cflags`
 LDFLAGS= `sdl-config --libs`
-SOURCES=ass2.cpp
+SOURCES=main.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=histEqImage
 
